@@ -1,0 +1,140 @@
+// HEX OPACITY {RGBA val} === {HEX val} -> value must be in the end of HEX string.
+// 0.05 === 80,
+// 0.08 === cc,
+// 0.15 === 26,
+// 0.1 === 1a,
+// 0.2 === 33,
+// 0.3 === 4d,
+// 0.4 === 66,
+// 0.5 === 0d,
+// 0.7 === b3,
+// 0.8 === cc
+
+const colors = {
+  main: '#ed3163',
+  amaranth: '#ed3163',
+  textualPressed: '#dc2656',
+  amaranth01: '#ed31631a',
+  darkRed: '#A1051D',
+  yellow: '#ffc834',
+  yellow01: '#ffc8341a',
+  yellowDarker: '#9D7100',
+  orange: '#FBBB17',
+  orangeDarker: '#E1A307',
+  orange01: '#FBBB171a',
+  greenLighter: '#3cef92',
+  green: '#32d882',
+  green01: '#32d8821a',
+  green02: '#32d88233',
+  green03: '#32d8824d',
+  green08: '#32d882cc',
+  greenDarker: '#25c572',
+  green005: '#32d8820d',
+  green008: '#32d88214',
+  darkBlue: '#223247',
+  darkBlue01: '#2232471a',
+  darkBlue04: '#22324766',
+  darkBlue07: '#223247b3',
+  darkBlue08: '#223247cc',
+  blueViolet: '#6758F3',
+  blueViolet01: '#6758F31a',
+  cornflowerBlue: '#4994f4',
+  cornflowerBlue02: '#4994f433',
+  cornflowerBlue05: '#4994f480',
+  lightBlue: '#2FC5FA',
+  lightBlue01: '#2FC5FA1a',
+  lightBlue05: '#2FC5FA80',
+  lightBlueHover: '#60bce5',
+  lightBluePressed: '#3e9bc5',
+  white: '#ffffff',
+  white05: '#ffffff80',
+  white07: '#ffffffb3',
+  whiteSilver: '#fbfbfd',
+  whiteBlue: '#f7fdff',
+  silverBlue: '#f0f7ff',
+  porcelain: '#f5f6f7',
+  lightGray: '#e2e5ed',
+  silver: '#c5c5c5',
+  middleGray: '#9ea0a5',
+  gray: '#656565',
+  darkGray: '#3e3f42',
+  darkGray05: '#3e3f4280',
+  black: '#222222',
+  black03: '#0000004d',
+  black01: '#0000001a',
+  black05: '#00000080',
+  black08: '#000000cc',
+  black005: '#0000000d',
+  black015: '#00000026',
+  transparent: 'transparent',
+  boxShadow: '0 1px 5px 0px rgba(0, 0, 0, 0.08)',
+  boxShadow03: '0 1px 5px 0px rgba(0, 0, 0, 0.3)',
+  bgShadowGradient: 'linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.8) 100%)',
+  bgShadowGradient20: 'linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.8) 100%)',
+};
+
+const fontFamily = 'AvertaStdPE-Regular, AvertaStdPE, Roboto, Helvetica, sans-serif';
+
+const shadows = {
+  formInputDefault: 'none',
+};
+
+export default {
+  colors,
+  shadows,
+  fontFamily,
+  form: {
+    label: {
+      main: {
+        p: '5px 0',
+        fontSize: 14,
+        requiredStarColor: 'red', // TODO: with design
+        color: colors.darkBlue,
+      },
+    },
+    // NOTE: from Styles API on react-select (https://react-select.com/styles)
+    reactSelect: {
+      main: {
+        control: {
+          width: '280px',
+          marginBottom: '20px',
+          backgroundColor: colors.white,
+          borderColor: colors.middleGray,
+          border: `1px solid ${colors.middleGray}`,
+          '&:hover': {
+            borderColor: colors.middleGray,
+          },
+        },
+        input: {
+          color: colors.darkBlue,
+        },
+        singleValue: {
+          color: colors.darkBlue,
+        },
+      },
+    },
+    input: {
+      main: {
+        px: '10px',
+        mb: '20px',
+        width: '280px',
+        height: '40px',
+        bg: colors.white,
+        borderRadius: '4px',
+        color: colors.darkBlue,
+        border: `1px solid ${colors.middleGray}`,
+      },
+      authPages: {
+        px: '10px',
+        mb: '20px',
+        width: '280px',
+        height: '40px',
+        bg: colors.white,
+        borderRadius: '2px',
+        color: colors.darkBlue,
+        border: `1px solid ${colors.middleGray}`,
+      },
+      focusBoxShadow: shadows.formInputDefault,
+    },
+  },
+};
