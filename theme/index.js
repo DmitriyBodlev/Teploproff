@@ -12,6 +12,7 @@
 
 const colors = {
   orange: '#F59708',
+  // orange: '#F59708',
   darkOrange: '#F06000',
   white: '#ffffff',
   white05: '#ffffff80',
