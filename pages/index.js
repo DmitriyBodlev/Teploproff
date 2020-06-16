@@ -21,10 +21,6 @@ export default class extends React.Component {
   }
 
   render() {
-    const { stories, page } = this.props
-
-    if( typeof stories === 'undefined' || ! stories ) return <Error statusCode={503} />
-
     return (
       <Layout title={'Hacker News Reader'}  description={'A sample PWA built with React and Next.JS'}>
         {/* <StoryList stories={stories} /> */}
