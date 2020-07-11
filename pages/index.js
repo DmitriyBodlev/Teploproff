@@ -3,7 +3,6 @@ import Layout from '../components/layout';
 import StoryList from '../components/StoryList';
 import Error from 'next/error';
 import Link from 'next/link';
-import Banner from '../components/banner';
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 export default class extends React.Component {
@@ -22,25 +21,12 @@ export default class extends React.Component {
 
   render() {
     return (
-      <Layout title={'Hacker News Reader'}  description={'A sample PWA built with React and Next.JS'}>
+      <Layout title={'ТеплоПрофф'}  description={'Тепло прямо вам в дом'}>
         {/* <StoryList stories={stories} /> */}
-        <Banner />
 {/* 
         <footer>
           <Link href={`/?page=${page+1}`} prefetch><a>Next Page &gt;</a></Link>
         </footer> */}
-
-        <style jsx>{`
-          footer {
-            padding: 2em 1em;
-          }
-          footer a {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #ff6600;
-            text-decoration: none;
-          }
-        `}</style>
       </Layout>
     );
   }
