@@ -34,7 +34,7 @@
     "emailjs-com": "^2.3.2",
     "firebase": "^6.4.0",
     "formik": "^1.5.8",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "next": "7.0.0",
     "react-emotion": "^7.2.0",
     "next-optimized-images": "^2.3.3",
